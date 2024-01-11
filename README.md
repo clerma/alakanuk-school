@@ -1,0 +1,1 @@
+# alakanuk-school
