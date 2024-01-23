@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% capture seo %}{% seo %}
+	 <meta name="keywords" content="{{page.keywords}}" />
+	{% endcapture %}{{seo | replace: "Jekyll", "Carlos Lerma Photography" }}
+	{% include head.html %}
+
+</head>
+
+<body>
+
+<!-- Header START -->
+<header class="navbar-light navbar-sticky header-static">
+	<!-- Nav START -->
+	{% include nav.html %}
+	<!-- Nav END -->
+</header>
+<!-- Header END -->
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+ {{ content }}
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- =======================
+Footer START -->
+{% include footer.html %}
+
+<!-- =======================
+Footer END -->
+
+<!-- Back to top -->
+<div class="back-top"><i class="bi bi-arrow-up-short position-absolute top-50 start-50 translate-middle"></i></div>
+{% include script.html %}
+
+</body>
+</html>
