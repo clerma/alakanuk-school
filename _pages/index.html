@@ -157,12 +157,12 @@ Main Banner START -->
 				<ul class="list-inline position-relative justify-content-center justify-content-lg-start mb-4">
 					<li class="list-inline-item me-2"> <i class="bi bi-calendar h6 mx-2"></i>21-22 March 2024</li>
 					<li class="list-inline-item me-2"> <i class="bi bi-clock-fill h6 mx-2"></i>8am-3pm</li>
-					<li class="list-inline-item"> <i class="bi bi-pin-map h6 mx-2"></i>9 Anderson St, Alakanuk, AK 99554</li>
+					<li class="list-inline-item"> <i class="bi bi-pin-map h6 mx-2"></i>9 Anderson St, {{ first_word }}, AK 99554</li>
 				</ul>
 				
 				<div class="d-sm-flex align-items-center justify-content-center justify-content-lg-start">
 					<!-- Button -->
-					<a href="#" class="btn btn-lg btn-blue me-2 mb-4 mb-sm-0">Get Started</a>
+					<a href="#" class="btn btn-lg btn-primary me-2 mb-4 mb-sm-0">Register Today!</a>
 				</div>
 			</div>
 			<!-- Left content END -->
@@ -349,7 +349,7 @@ Popular course START -->
 					<span> Job Fair</span>
 				</h2>
 
-				<p class="mt-4 mb-0">The Alakanuk job fair will showcase career opportunities and offer on-site interviews. Dress to impress and bring copies of your resume.</p>
+				<p class="mt-4 mb-0">The {{ first_word }} job fair will showcase career opportunities and offer on-site interviews. Dress to impress and bring copies of your resume.</p>
 
 				<!-- List -->
 				<ul class="list-group list-group-borderless mt-4">
@@ -367,7 +367,7 @@ Popular course START -->
 				<!-- Buttons -->
 				<div class="d-sm-flex align-items-center mt-4">
 					<!-- Button -->
-					<a href="#" class="btn btn-lg btn-dark me-2 mb-4 mb-sm-0">Read more</a>
+					<a href="#" class="btn btn-lg btn-blue me-2 mb-4 mb-sm-0">Register Today!</a>
 				</div>
 
 			</div>
@@ -380,13 +380,13 @@ Popular course START -->
 					<div class="col-md-12">
 						<!-- Box item -->
 						<div class="bg-light p-4 p-xl-5 text-center rounded-3 mb-4">
-							<h5>Who</h5>
+							<h5>Who Should Attend?</h5>
 							<span class="h6 text-blue mb-2">9-12th graders & Community</span>
 						</div>
 						<!-- Box item -->
 						<div class="bg-light p-4 p-xl-5 text-center rounded-3">
-							<h5>When</h5>
-							<span class="h6 text-blue mb-2">Students arrive on March 21st and can leave on the afternoon of March 22nd or the morning of March 23rd.</span>	
+							<h5>When is it?</h5>
+							<span class="h6 text-blue mb-2">Students arrive on March 21st<br/> and can leave March 22nd afternoon or morning of March 23rd </span>	
 						</div>
 					</div>
 				</div> <!-- Row END -->
@@ -397,102 +397,33 @@ Popular course START -->
 		<div class="row pt-3">
 			<div class="col-md-12 text-center">
 				<p class="mb-0"><em>* Schools are responsible for student travel.</em></p>
-				<p><em>* Students need to bring bedding and snacks. Meals will be provided by Alakanuk School.</em></p>
+				<p><em>* Students need to bring bedding and snacks. Meals will be provided by {{ first_word }} School.</em></p>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="pb-0 pb-md-5">
+
+<section class="bg-light">
 	<div class="container">
-		<div class="row justify-content-center">
+		<div class="row d-flex justify-content-center">
+			<div class="col-md-12 my-3 text-center pb-5">
+				<h3>Vendors</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+			</div>
 			<div class="col-md-12">
 				<!-- Slider START -->
 				<div class="tiny-slider">
 					<div class="tiny-slider-inner" data-arrow="false" data-dots="false" data-gutter="80" data-items-xl="6" data-items-lg="5" data-items-md="4" data-items-sm="3" data-items-xs="2" data-autoplay="2000">
 						<!-- Slide item START -->
-						<div class="item"> <img class="grayscale" src="assets/images/client/coca-cola.svg" alt="client-logo"> </div>
-						<div class="item"> <img class="grayscale" src="assets/images/client/android.svg" alt="client-logo"> </div>
-						<div class="item"> <img class="grayscale" src="assets/images/client/envato.svg" alt="client-logo"> </div>
-						<div class="item"> <img class="grayscale" src="assets/images/client/microsoft.svg" alt="client-logo"> </div>
-						<div class="item"> <img class="grayscale" src="assets/images/client/netflix.svg" alt="client-logo"> </div>
-						<div class="item"> <img class="grayscale" src="assets/images/client/google.svg" alt="client-logo"> </div>
+						{% for item in site.data.vendors %}
+						<div class="item"><p>{{item.name}}</p></div>
+						{% endfor %}
+						
 						<div class="item"> <img class="grayscale" src="assets/images/client/linkedin.svg" alt="client-logo"> </div>
 						<!-- Slide item END -->
 					</div>
 				</div>
 				<!-- Slider END -->
-			</div>
-		</div>
-	</div>
-</section>
-<section class="bg-light">
-	<div class="container">
-		<div class="row d-flex justify-content-center">
-			<!-- Logo item -->
-			<div class="col-6 col-sm-4 col-lg-2">
-				<div class="p-4 grayscale text-center">
-					<img src="assets/images/client/microsoft.svg" alt="">
-				</div>
-			</div>
-			<!-- Logo item -->
-			<div class="col-6 col-sm-4 col-lg-2">
-				<div class="p-4 grayscale text-center">
-					<img src="assets/images/client/linkedin.svg" alt="">
-				</div>
-			</div>
-			<!-- Logo item -->
-			<div class="col-6 col-sm-4 col-lg-2">
-				<div class="p-4 grayscale text-center">
-					<img src="assets/images/client/netflix.svg" alt="">
-				</div>
-			</div>
-			<!-- Logo item -->
-			<div class="col-6 col-sm-4 col-lg-2">
-				<div class="p-4 grayscale text-center">
-					<img src="assets/images/client/coca-cola.svg" alt="">
-				</div>
-			</div>
-			<!-- Logo item -->
-			<div class="col-6 col-sm-4 col-lg-2">
-				<div class="p-4 grayscale text-center">
-					<img src="assets/images/client/envato.svg" alt="">
-				</div>
-			</div>
-			<!-- Logo item -->
-			<div class="col-6 col-sm-4 col-lg-2">
-				<div class="p-4 grayscale text-center">
-					<img src="assets/images/client/android.svg" alt="">
-				</div>
-			</div>
-			<!-- Logo item -->
-			<div class="col-6 col-sm-4 col-lg-2">
-				<div class="p-4 grayscale text-center">
-					<img src="assets/images/client/coca-cola.svg" alt="">
-				</div>
-			</div>
-			<!-- Logo item -->
-			<div class="col-6 col-sm-4 col-lg-2">
-				<div class="p-4 grayscale text-center">
-					<img src="assets/images/client/shippable.svg" alt="">
-				</div>
-			</div>
-			<!-- Logo item -->
-			<div class="col-6 col-sm-4 col-lg-2">
-				<div class="p-4 grayscale text-center">
-					<img src="assets/images/client/algolia.svg" alt="">
-				</div>
-			</div>
-			<!-- Logo item -->
-			<div class="col-6 col-sm-4 col-lg-2">
-				<div class="p-4 grayscale text-center">
-					<img src="assets/images/client/importio.svg" alt="">
-				</div>
-			</div>
-			<!-- Logo item -->
-			<div class="col-6 col-sm-4 col-lg-2">
-				<div class="p-4 grayscale text-center">
-					<img src="assets/images/client/yamaha.svg" alt="">
-				</div>
 			</div>
 		</div>
 	</div>
@@ -525,14 +456,14 @@ Popular course START -->
 						<div class="col-11 mx-auto position-relative">
 							<div class="row align-items-center">
 								<!-- Title -->
-								<div class="col-lg-7">
-									<h3 class="text-white">Become an Instructor!</h3>
-									<p class="text-white mb-3 mb-lg-0">Take the first steps towards a fulfilling career!
+								<div class="col-lg-8">
+									<h3 class="text-white">Take the first steps towards a fulfilling career!</h3>
+									<p class="text-white mb-3 mb-lg-0">
 										Get more information and register now</p>
 								</div>
 								<!-- Content and input -->
-								<div class="col-lg-5 text-lg-end">
-									<a href="#" class="btn btn-outline-warning mb-0">Start Teaching Today</a>
+								<div class="col-lg-4 text-lg-end">
+									<a href="#" class="btn btn-outline-warning mb-0">register now</a>
 								</div>
 							</div>
 						</div>

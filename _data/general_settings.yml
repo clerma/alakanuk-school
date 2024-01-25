@@ -1,13 +1,15 @@
 site_logo_url: 
 site_name: Alakanuk Braves
-email: 
-phone: (907) 238-3312
+email: krule@lysd.org
+phone: (817) 917-0351
+description: We are a people of the salmon, of the whitefish, and pike.
+  Of the moose, bear, fox, beaver, and lynx. Of the berries, plants, and the land. Of family.
 address: Alakanuk School, Alakanuk, AK 99554
 ga_id: 
 head_code: ''
 footer_code: ''
 social:
-  - name: Facebook
+  - name: facebook
     link: https://facebook.com/alakanuk.brave.5
     icon: facebook
 
