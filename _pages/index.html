@@ -155,7 +155,8 @@ Main Banner START -->
 				</ul>
 				<div class="d-sm-flex align-items-center justify-content-center justify-content-lg-start">
 					<!-- Button -->
-					<a href="#" class="btn btn-lg btn-blue me-2 mb-4 mb-sm-0">Register Today!</a>
+					<a href="#" class="btn btn-lg btn-blue me-2 mb-4 mb-sm-0" data-paperform-id="alakanuk-registration-form" data-popup-button="1">Register Today!</a>
+					
 				</div>
 			</div>
 			<!-- Left content END -->
@@ -353,7 +354,7 @@ Popular course START -->
 				<!-- Buttons -->
 				<div class="d-sm-flex align-items-center mt-4">
 					<!-- Button -->
-					<a href="#" class="btn btn-lg btn-blue me-2 mb-4 mb-sm-0">Register Today!</a>
+					<a href="#" class="btn btn-lg btn-blue me-2 mb-4 mb-sm-0" data-paperform-id="alakanuk-registration-form" data-popup-button="1">Register Today!</a>
 				</div>
 
 			</div>
@@ -400,13 +401,11 @@ Popular course START -->
 			<div class="col-md-12">
 				<!-- Slider START -->
 				<div class="tiny-slider">
-					<div class="tiny-slider-inner" data-arrow="false" data-dots="false" data-gutter="80" data-items-xl="6" data-items-lg="5" data-items-md="4" data-items-sm="3" data-items-xs="2" data-autoplay="2000">
+					<div class="tiny-slider-inner content" data-arrow="false" data-dots="false" data-gutter="80" data-items-xl="6" data-items-lg="5" data-items-md="4" data-items-sm="3" data-items-xs="2" data-autoplay="2000">
 						<!-- Slide item START -->
 						{% for item in site.data.vendors %}
-						<div class="item">{% if item.image %}<img src="{{item.image}}" class="img-fluid"/>{% else %}<p>{{item.name}}</p>{% endif %}</div>
+						<div class="item content">{% if item.image %}<img src="{{item.image}}" class="img-fluid content"/>{% else %}<p>{{item.name}}</p>{% endif %}</div>
 						{% endfor %}
-						
-						<div class="item"> <img class="grayscale" src="assets/images/client/linkedin.svg" alt="client-logo"> </div>
 						<!-- Slide item END -->
 					</div>
 				</div>
